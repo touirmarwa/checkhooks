@@ -23,3 +23,17 @@ code {
 .nan{
   margin-left: 35px;
 }
+.Home{
+  text-align: -webkit-center;
+  margin-top: 11%;
+}
+.sign{
+  display: flex;
+  margin-left: 30%;
+}
+.navs{
+  background-color: rgb(236, 236, 14);
+}
+.Marwa{
+  margin-left: 30%;
+}

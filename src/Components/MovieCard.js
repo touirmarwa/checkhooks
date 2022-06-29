@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom';
 import { useState } from "react";
 import { Card,Button} from "react-bootstrap"
 import Rating from '@mui/material/Rating';
@@ -7,7 +8,10 @@ const MovieCard=({movie,movies,setMovies})=>{
     const handleDelete=(id)=>  setMovies(movies.filter(movie => movie.id != id))
     return(
             <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={movie.posterURL} style={{width:'286px',height:'389px'}}/>
+                <Link to={`/Movies/${movie.id}`}>
+                <Card.Img variant="top" src={movie.posterURL} style={{width:'286px',height:'389px'}}/>
+                </Link>
+           
             <Card.Body>
                 <Card.Title>{movie.title}</Card.Title>
                 <Card.Text>
